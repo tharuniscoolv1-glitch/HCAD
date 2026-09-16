@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hcad"
+version = "0.1.0"
+description = "Highly Compressed Activity Data: An ultra-fast, lightweight binary tabular format"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "Apache-2.0"
+authors = [
+    { name = "tharuniscoolv1-glitch" }
+]
+keywords = [
+    "binary",
+    "compression",
+    "tabular",
+    "activity-data",
+    "time-series",
+    "struct",
+    "zlib",
+    "embedded-database"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Database",
+    "Topic :: System :: Archiving :: Compression",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/tharuniscoolv1-glitch/HCAD"
+Repository = "https://github.com/tharuniscoolv1-glitch/HCAD"
+Issues = "https://github.com/tharuniscoolv1-glitch/HCAD/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["hcad*"]
+
+[tool.setuptools.package-data]
+hcad = ["py.typed"]
