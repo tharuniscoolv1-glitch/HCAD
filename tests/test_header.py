@@ -4,15 +4,15 @@ Tests for HCAD Header packing, unpacking, and validation.
 import io
 import unittest
 
-from src.hcad.core.constants import (
+from hcad.core.constants import (
     IDENTIFIER,
     CURRENT_VERSION,
     COMPRESSION_NONE,
     COMPRESSION_ZLIB,
     HEADER_SIZE_V2,
 )
-from src.hcad.core.header import Header
-from src.hcad.core.exceptions import (
+from hcad.core.header import Header
+from hcad.core.exceptions import (
     InvalidHeaderError,
     UnsupportedVersionError,
     UnsupportedCompressionError,

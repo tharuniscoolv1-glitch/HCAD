@@ -33,7 +33,7 @@ class TestRootImports(unittest.TestCase):
         self.temp_dir.cleanup()
 
     def test_version_string(self):
-        self.assertEqual(hcad.__version__, "0.1.1")
+        self.assertEqual(hcad.__version__, "0.2.0")
 
     def test_direct_function_call(self):
         filename = "root_test.hcad"

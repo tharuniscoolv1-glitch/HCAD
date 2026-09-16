@@ -7,7 +7,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from src.hcad import (
+from hcad import (
     HCADFile,
     Column,
     COMPRESSION_NONE,
@@ -16,7 +16,7 @@ from src.hcad import (
     SchemaMismatchError,
     InvalidHeaderError,
 )
-from src.functions import createNewFile, validateFile
+from hcad.functions import createNewFile, validateFile
 
 
 class TestEdgeCases(unittest.TestCase):

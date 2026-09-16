@@ -4,8 +4,8 @@ Tests for HCAD Column definition, compound formats, and struct packing/unpacking
 import io
 import unittest
 
-from src.hcad.core.column import Column
-from src.hcad.core.exceptions import SchemaMismatchError, CorruptedFileError
+from hcad.core.column import Column
+from hcad.core.exceptions import SchemaMismatchError, CorruptedFileError
 
 
 class TestColumn(unittest.TestCase):

@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from src.hcad import (
+from hcad import (
     HCADFile,
     Table,
     Column,

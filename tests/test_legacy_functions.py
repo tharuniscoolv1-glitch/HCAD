@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from src.functions import (
+from hcad.functions import (
     createNewFile,
     validateFile,
     getCompressionFromFile,
