@@ -20,18 +20,42 @@ from .core.column import Column
 from .core.header import Header
 from .core.table import Table
 from .engine.file import HCADFile
+from .functions import (
+    createNewFile,
+    validateFile,
+    getCompressionFromFile,
+    getColumnDescriptions,
+    makeColumnDescriptorsBytes,
+    writeDataToFile,
+    readDataFromFile,
+    compressDataInFile,
+    decompressDataInFile,
+)
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
+    # Core Classes
     'HCADFile',
     'Table',
     'Column',
     'Header',
+    # Constants
     'IDENTIFIER',
     'CURRENT_VERSION',
     'COMPRESSION_NONE',
     'COMPRESSION_ZLIB',
+    # Procedural Functions
+    'createNewFile',
+    'validateFile',
+    'getCompressionFromFile',
+    'getColumnDescriptions',
+    'makeColumnDescriptorsBytes',
+    'writeDataToFile',
+    'readDataFromFile',
+    'compressDataInFile',
+    'decompressDataInFile',
+    # Exceptions
     'HCADError',
     'InvalidHeaderError',
     'CorruptedFileError',
